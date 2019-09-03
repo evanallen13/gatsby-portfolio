@@ -1,0 +1,14 @@
+.About{
+    text-align: center;
+    background-color: #f3f0e2;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+.About h1{
+    margin: 0;
+    color: #2d5d7c;
+    font-size: 90px;
+
+}
