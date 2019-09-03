@@ -1,19 +1,18 @@
 import React from 'react';
-import {Card, Button, Col} from 'react-Bootstrap'
 // import './project.css'
 
 const Project = (props) => {
     return(
         <div className='p-2' style={{ width: '22rem', margin:'0'}}>
             <h4 style={{margin:'0'}}>{props.title}</h4>
-            <Card.Body>
+            <div>
                 <img src={props.image} alt={props.image}></img>
-                <Button className="btn">Git</Button>
-                <Button className="btn">Hosting</Button>
-                <Card.Text>
+                <button className="btn">Git</button>
+                <button className="btn">Git</button>
+                <div>
                     {props.text}
-                </Card.Text>
-            </Card.Body>
+                </div>
+            </div>
         </div>
     )
 }
