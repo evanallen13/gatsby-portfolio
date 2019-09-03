@@ -18,8 +18,7 @@ const Project = (props) => {
                 </div>
                     {
                         Array(props.skills).map((skill) =>
-                            console.log(skill)
-                            // <img src={skill} alt={skill} key={skill} ></img>
+                            <img src={skill} alt={skill} key={skill} ></img>
                         )
                     }
                 <div>
