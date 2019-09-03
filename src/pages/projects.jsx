@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../components/project/project'
 import '../styles/projects.css'
+import { graphql } from 'gatsby'
 import { Container} from 'react-bootstrap'
 
 const Projects = ({data}) =>{
