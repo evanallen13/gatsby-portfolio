@@ -15,6 +15,9 @@ const Projects = ({data}) =>{
                       title={node.frontmatter.title}
                       image={node.frontmatter.img}
                       text={node.frontmatter.text}
+                      git= {node.frontmatter.git}
+                      hosting = {node.frontmatter.hosting}
+                      skills = {node.frontmatter.skills}
                     ></Project>
                   ))
                 }

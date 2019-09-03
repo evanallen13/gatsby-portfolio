@@ -1,9 +1,9 @@
 ---
 title : 'Todo App'
-img : 'weather2.png'
+img : '/projects/todo.png'
 git : 'https://github.com/evanallen13/React-Iphone-Weather-App-Clone'
 hosting : 'https://wizardly-spence-f3a746.netlify.com/'
-skills : 'javascript.png , firebase.png'
+skills : '/skills/js.png , /skills/html5.png'
 text : 'This was a clone of the Apple Weather app that I build using React.'
 ---
 

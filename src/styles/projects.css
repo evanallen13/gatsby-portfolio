@@ -4,6 +4,7 @@
     background-color: #f3f0e2;
     height: 100vh;
     width: 100vw;
+    font-family: sans-serif
 }
 #project_title{
     margin: 0;
@@ -13,12 +14,23 @@
     color: rgb(45, 93, 124);
 }
 
+.btnContainer{
+    width: 99.8%;
+
+}
+
 .btn{
     width: 50%;
-    height: 40px;
+    height: 60px;
     margin:'0';
     background-color: #2e364f;
-    color: #ef5939;
+    color: rgb(239, 89, 57);
     border: 0;
+    border-radius: 0;
+}
 
+@media screen and (max-width: 722px) {
+    .projectPage{
+        height: 100%;
+    }
 }

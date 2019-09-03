@@ -1,14 +1,26 @@
 import React from 'react';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 // import './project.css'
 
 const Project = (props) => {
     return(
-        <div className='p-2' style={{ width: '22rem', margin:'0'}}>
-            <h4 style={{margin:'0'}}>{props.title}</h4>
+        <div className='p-2' style={{ width: '367px', margin:'0'}}>
+            <h4 className='projectTitle' style={{margin:'0'}}>{props.title}</h4>
             <div>
                 <img src={props.image} alt={props.image}></img>
-                <button className="btn">Git</button>
-                <button className="btn">Git</button>
+                <div className='btnContainer'>
+                    <div className="btn">
+                            <a href={props.git} target="_blank" rel="noopener noreferrer"><img src="/header/github.png" alt="github"></img></a>
+                    </div>
+                    <div className="btn">
+                            <a href={props.hosting} target="_blank" rel="noopener noreferrer"><img src="/header/eye.png" alt="hosting"></img></a>
+                    </div>
+                </div>
+                    {
+                        Array(props.skills).map((skill) =>
+                            <img src={skill} alt={skill} key={skill}></img>
+                        )
+                    }
                 <div>
                     {props.text}
                 </div>
