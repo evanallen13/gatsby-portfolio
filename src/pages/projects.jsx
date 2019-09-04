@@ -2,11 +2,16 @@ import React from 'react';
 import Project from '../components/project/project'
 import '../styles/projects.css'
 import { graphql } from 'gatsby'
+import Nav from '../components/nav/nav'
 
 const Projects = ({data}) =>{
     return(
         <div className="projectPage" style={{textAlign:'center',margin:'0'}}>
           <h1 id="project_title">Projects</h1>
+          <Nav
+            btnColor = {'rgb(45, 93, 124)'}
+            color = {'#f3f0e2'}
+          ></Nav>
             <div className="d-flex flex-wrap justify-content-center">
                 {
                   data.allMarkdownRemark.nodes.map((node) => (

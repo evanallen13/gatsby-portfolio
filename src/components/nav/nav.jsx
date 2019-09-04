@@ -3,10 +3,19 @@ import { Link } from 'gatsby'
 
 const Nav = (props) => 
     <div>
-        <button className='navBtn' 
-            style={{backgroundColor : props.btnColor}}>
-            <Link to='/projects'style={{textDecoration:'none',color: props.color}}>Projects</Link>
-        </button>
+        <Link to='/'style={{textDecoration:'none'}}>
+            <button className='navBtn' 
+                style={{backgroundColor : props.btnColor,color: props.color}}>
+                Home
+            </button>
+        </Link>
+        <Link to='/projects'style={{textDecoration:'none'}}>
+            <button className='navBtn' 
+                style={{backgroundColor : props.btnColor,color: props.color}}>
+                Project
+            </button>
+        </Link>
+
         <button className='navBtn' style={{backgroundColor : props.btnColor}}>
             <Link to='/about'style={{textDecoration:'none',color: props.color}}>About</Link>
         </button>

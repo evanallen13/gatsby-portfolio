@@ -11,7 +11,7 @@ const About = () => {
                 color = {'#f3f0e2'}
             ></Nav>
             <div className="about">
-                <p>I am a full stack developer living in the Los Angeles area.
+                <p style={{marginTop: '10px'}}>I am a full stack developer living in the Los Angeles area.
                     Currently I am finishing up my last semester at CSULB for my Computer Information Systems degree.
                 </p>
                 <p>
