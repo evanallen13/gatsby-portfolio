@@ -9,6 +9,8 @@ const About = () => {
             <Nav
                 btnColor = {'rgb(45, 93, 124)'}
                 color = {'#f3f0e2'}
+                page1 = {['/','Home']}
+                page2 = {['/projects','Projects']}
             ></Nav>
             <div className="about">
                 <p style={{marginTop: '10px'}}>I am a full stack developer living in the Los Angeles area.

@@ -20,7 +20,13 @@
     width: 45vw;
     margin: 0 auto;
 }
-
+.contact{
+    margin-top: 20px;
+}
+.contact a{
+    margin-right: 10px;
+    margin-left: 10px;
+}
 @media screen and (max-width: 700px) {
     .about{
         width: 80vw;

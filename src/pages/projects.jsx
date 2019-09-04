@@ -11,6 +11,8 @@ const Projects = ({data}) =>{
           <Nav
             btnColor = {'rgb(45, 93, 124)'}
             color = {'#f3f0e2'}
+            page1 = {['/','Home']}
+            page2 = {['/about','About']}
           ></Nav>
             <div className="d-flex flex-wrap justify-content-center">
                 {
