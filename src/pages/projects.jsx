@@ -24,7 +24,10 @@ const Projects = ({data}) =>{
                       text={node.frontmatter.text}
                       git= {node.frontmatter.git}
                       hosting = {node.frontmatter.hosting}
-                      skills = {node.frontmatter.skills}
+                      skill1 = {node.frontmatter.skill1}
+                      skill2 = {node.frontmatter.skill2}
+                      skill3 = {node.frontmatter.skill3}
+                      skill4 = {node.frontmatter.skill4}
                     ></Project>
                   ))
                 }
@@ -47,6 +50,10 @@ export const query = graphql`
             hosting
             skills
             text
+            skill1
+            skill2
+            skill3
+            skill4
           }
           html
         }

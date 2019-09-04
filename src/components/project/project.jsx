@@ -7,7 +7,7 @@ const Project = (props) => {
         <div className='p-2' style={{ width: '367px', margin:'10px 10px 0px 10px'}}>
             <h4 className='projectTitle' style={{margin:'0'}}>{props.title}</h4>
             <div>
-                <img src={props.image} alt={props.image}></img>
+                <img className='projectImg' src={props.image} alt={props.image}></img>
                 <div className='btnContainer'>
                     <div className="btn">
                             <a href={props.git} target="_blank" rel="noopener noreferrer"><img src="/header/github.png" alt="github"></img></a>
@@ -16,11 +16,12 @@ const Project = (props) => {
                             <a href={props.hosting} target="_blank" rel="noopener noreferrer"><img src="/header/eye.png" alt="hosting"></img></a>
                     </div>
                 </div>
-                    {
-                        Array(props.skills).map((skill) =>
-                            <img src={skill} alt={skill} key={skill} ></img>
-                        )
-                    }
+                <div className='skills'>
+                    <img src={props.skill1} alt='skill'></img>
+                    <img src={props.skill2} alt='skill'></img>
+                    <img src={props.skill3} alt='skill'></img>
+                    <img src={props.skill4} alt='skill'></img>
+                </div>
                 <div>
                     {props.text}
                 </div>
