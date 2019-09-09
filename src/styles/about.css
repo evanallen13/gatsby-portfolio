@@ -29,7 +29,7 @@
 }
 @media screen and (max-width: 700px) {
     .About{
-        height: 100%;
+        height: 100vh;
     }
     .about{
         width: 80vw;
