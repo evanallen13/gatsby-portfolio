@@ -4,7 +4,7 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const Project = (props) => {
     return(
-        <div className='p-2' style={{ width: '367px', margin:'10px 10px 0px 10px'}}>
+        <div className='p-2' style={{ width: '360px', margin:'10px 10px 0px 10px'}}>
             <h4 className='projectTitle' style={{margin:'0'}}>{props.title}</h4>
             <div>
                 <img className='projectImg' src={props.image} alt={props.image}></img>
