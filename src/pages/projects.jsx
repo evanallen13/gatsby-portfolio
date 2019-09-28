@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Project from '../components/project/project'
 import '../styles/projects.css'
 import { graphql } from 'gatsby'
 import Nav from '../components/nav/nav'
+import js from'../../static/skills/js.png'
+import react from '../../static/skills/react.png'
 
 const Projects = ({data}) =>{
+    const [ skill, setSkill ] = useState('')
     return(
         <div className="projectPage" style={{textAlign:'center',margin:'0'}}>
           <h1 id="project_title">Projects</h1>
@@ -14,25 +17,31 @@ const Projects = ({data}) =>{
             page1 = {['/','Home']}
             page2 = {['/about','About']}
           ></Nav>
+            <h6>Choose Skill</h6>
+            <div>
+              <img src={js} alt="js" onClick={() => setSkill('js')}></img>
+              <img src={react} alt="react" onClick={() => setSkill('react')}></img>
+            </div>
             <div className="d-flex flex-wrap justify-content-center">
                 {
                   data.allMarkdownRemark.nodes.map((node) => (
-                    <Project
-                      key={node.frontmatter.title}
-                      title={node.frontmatter.title}
-                      image={node.frontmatter.img}
-                      text={node.frontmatter.text}
-                      git= {node.frontmatter.git}
-                      hosting = {node.frontmatter.hosting}
-                      skill1 = {node.frontmatter.skill1}
-                      skill2 = {node.frontmatter.skill2}
-                      skill3 = {node.frontmatter.skill3}
-                      skill4 = {node.frontmatter.skill4}
-                    ></Project>
+                    (node.frontmatter.keywords.includes(skill) ? 
+                      <Project
+                        key={node.frontmatter.title}
+                        title={node.frontmatter.title}
+                        image={node.frontmatter.img}
+                        text={node.frontmatter.text}
+                        git= {node.frontmatter.git}
+                        hosting = {node.frontmatter.hosting}
+                        skill1 = {node.frontmatter.skill1}
+                        skill2 = {node.frontmatter.skill2}
+                        skill3 = {node.frontmatter.skill3}
+                        skill4 = {node.frontmatter.skill4}
+                    ></Project> : null
+                    )
                   ))
                 }
             </div>
-
         </div>
     )
 } 
@@ -54,6 +63,7 @@ export const query = graphql`
             skill2
             skill3
             skill4
+            keywords
           }
           html
         }
