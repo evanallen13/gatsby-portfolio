@@ -3,35 +3,45 @@
 .About{
     text-align: center;
     align-content: center;
-    background-color: #f3f0e2;
+    background-color: #2d5d7c;
     height: 100vh;
+    min-height: 100%;
     width: 100vw;
     font-family: sans-serif;
 }
 
 .About h4{
-    margin: 0;
-    color: #2d5d7c;
+    margin: 10px 10px 0 0;
+    padding:0 0 0 0;
+    color: #f3f0e2;
     font-size: 50px;
     font-family: 'Permanent Marker', cursive;
+    position: relative;
+    display: inline;
 }
 
 .about{
-    width: 45vw;
-    margin: 0 auto;
+    width: 60vw;
+    background-color: rgba(242, 239, 226,.7);
+    color : #2d5d7c;
+    border-radius : 3px;
+    display: inline-block;
 }
-.contact{
-    margin-top: 20px;
+.about p{
+    width : 90%;
+    margin : 0 auto;
 }
-.contact a{
-    margin-right: 10px;
-    margin-left: 10px;
+.image{
+    height: 400px;
+    display: inline-block;
 }
+
+
 @media screen and (max-width: 700px) {
     .About{
         height: 100vh;
     }
-    .about{
-        width: 80vw;
+    .image{
+        display: none;
     }
 }
