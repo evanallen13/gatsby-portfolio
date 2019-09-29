@@ -1,14 +1,12 @@
 import React from 'react';
 import '../styles/about.css'
 import Nav from '../components/nav/nav'
-import head from '../../static/me/head.png'
-import army from '../../static/me/army.jpg'
 
 const About = () => {
     return (
         <div className='About'>
             <h4>About Me</h4>
-            <img src={head} alt='headshot' style={{width : '80px',display:'inline',borderRadius:"50%"}}></img>
+            <img src={'../../me/Head.png'} alt='headshot' style={{width : '80px',display:'inline',borderRadius:"50%"}}></img>
             <Nav
                 color = {'rgb(45, 93, 124)'}
                 btnColor = {'#f3f0e2'}
@@ -28,9 +26,10 @@ const About = () => {
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum dolor iusto repellendus omnis unde soluta reiciendis, porro, dolore id magnam tempora quae officiis nam eveniet delectus perferendis cum in sint.
                     </p>
                 </div> 
-                <img className="image"src={army} alt='me'></img>
+                <img className="image"src={'../../me/Army.jpg'} alt='me'></img>
         </div>
     )
 }
 
 export default About;
+
