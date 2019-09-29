@@ -3,7 +3,7 @@ title : 'Weather App'
 img : 'weather2.png'
 git : 'https://github.com/evanallen13/Weather-Final'
 hosting : 'https://nervous-clarke-50a2e4.netlify.com/'
-keywords : 'js react firebase gatsby'
+keywords : 'js react firebase bootstrap'
 skills : 'javascript.png , firebase.png '
 text: 'This is a weather app built using the OpenWeather API. '
 
