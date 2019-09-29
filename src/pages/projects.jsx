@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Nav from '../components/nav/nav'
 import js from'../../static/skills/js.png'
 import react from '../../static/skills/react.png'
+import gats from '../../static/skills/gatsby.png'
 
 const Projects = ({data}) =>{
     const [ skill, setSkill ] = useState('')
@@ -19,8 +20,10 @@ const Projects = ({data}) =>{
           ></Nav>
             <h6>Choose Skill</h6>
             <div>
+              <button className="allBtn" onClick={() => setSkill('')}>All</button>
               <img src={js} alt="js" onClick={() => setSkill('js')}></img>
               <img src={react} alt="react" onClick={() => setSkill('react')}></img>
+              <img src={gats} alt="gatsby" onClick={() => setSkill('gatsby')}></img>
             </div>
             <div className="d-flex flex-wrap justify-content-center">
                 {
