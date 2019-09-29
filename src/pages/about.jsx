@@ -15,7 +15,7 @@ const About = () => {
                 page1 = {['/','Home']}
                 page2 = {['/projects','Projects']}
             ></Nav>
-               <div className="about" >
+               <div className="aboutText" >
                     <h5>Who am I?</h5>
                     <p>
                     I am a front end developer living in the Los Angeles area. I attending my 

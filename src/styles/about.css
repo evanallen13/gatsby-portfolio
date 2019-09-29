@@ -20,14 +20,14 @@
     display: inline;
 }
 
-.about{
+.aboutText{
     width: 60vw;
     background-color: rgba(242, 239, 226,.7);
     color : #2d5d7c;
     border-radius : 3px;
     display: inline-block;
 }
-.about p{
+.aboutText p{
     width : 90%;
     margin : 0 auto;
 }
