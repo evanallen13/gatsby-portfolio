@@ -23,7 +23,7 @@ const About = () => {
                     </p>
                     <h5>Stack</h5>
                     <p>
-                        I am currently utilizing x y and z. Z, x, y are the languages I am most proficient in.
+                        I am currently utilizing a React and Firebase stack.
                         I am constantly working to expand my skills in these applications and to learn further programs. 
                         If you look through my projects on this site you can see my various skills in action.
                     </p>
