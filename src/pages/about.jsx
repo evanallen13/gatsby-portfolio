@@ -16,14 +16,22 @@ const About = () => {
                <div className="aboutText" >
                     <h5>Who am I?</h5>
                     <p>
-                    I am a front end developer living in the Los Angeles area. I attending my 
-                    last semester of my Computer Information Systems degree at CSULB. 
+                        I am a front end developer, living in the greater Los Angeles Area. 
+                        I currently attend Cal State - Long Beach and am in my final semester as a Computer Information Systems major.
+                        I served in the United States Army for four years prior to college. I am extremely detail oriented and process driven. Outside of building websites and coding, 
+                        I enjoy hanging out with my rat terrier, Jaime, and pug, Pugh. 
                     </p>
+                    <h5>Stack</h5>
                     <p>
-                    I am looking for employment as a fullstack developer
+                        I am currently utilizing x y and z. Z, x, y are the languages I am most proficient in.
+                        I am constantly working to expand my skills in these applications and to learn further programs. 
+                        If you look through my projects on this site you can see my various skills in action.
                     </p>
+                    <h5>Currently Seeking</h5>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum dolor iusto repellendus omnis unde soluta reiciendis, porro, dolore id magnam tempora quae officiis nam eveniet delectus perferendis cum in sint.
+                        I am currently seeking a role as a Front End Developer at a small to mid size company. 
+                        My ideal role would challenge my already developed skills as well as help me to gain new skills. 
+                        I am looking with in the Los Angeles/Orange County area.
                     </p>
                 </div> 
                 <img className="image"src={'../../me/Army.jpg'} alt='me'></img>
