@@ -19,7 +19,7 @@ const Projects = ({data}) =>{
             page2 = {['/about','About']}
           ></Nav>
             <h6>Choose Skill</h6>
-            <div>
+            <div className='queryMenu'>
               <button className="allBtn" onClick={() => setSkill('')}>All</button>
               <img src={js} alt="js" onClick={() => setSkill('js')}></img>
               <img src={react} alt="react" onClick={() => setSkill('react')}></img>
