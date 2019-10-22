@@ -8,6 +8,7 @@
     min-height: 100vh;
     width: 100vw;
     font-family: sans-serif;
+    text-align: center;
 }
 
 .About h4{
@@ -23,11 +24,11 @@
 .aboutText{
     width: 60vw;
     color : #2d5d7c;
-    background-color: rgba(242, 239, 226,.5);
+    background-color: rgb(242, 239, 226);
     border-radius : 3px;
     float : left;
-    margin : 5px 0 0 60px;
     text-align: start;
+    margin : 0 20vw 0 20vw;
 }
 .aboutText h5{
     font-family: 'Permanent Marker', cursive;

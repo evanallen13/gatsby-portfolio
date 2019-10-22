@@ -12,15 +12,26 @@ const Project = (props) => {
                     <div className="btn">
                             <a href={props.git} target="_blank" rel="noopener noreferrer"><img src="/header/github.png" alt="github"></img></a>
                     </div>
-                    <div className="btn">
+                    {props.hosting ? 
+                        <div className="btn">
                             <a href={props.hosting} target="_blank" rel="noopener noreferrer"><img src="/header/eye.png" alt="hosting"></img></a>
-                    </div>
+                        </div>:null
+                    }
                 </div>
                 <div className='skills'>
-                    <img src={props.skill1} alt='skill'></img>
-                    <img src={props.skill2} alt='skill'></img>
-                    <img src={props.skill3} alt='skill'></img>
-                    <img src={props.skill4} alt='skill'></img>
+                    {props.skill1 ? 
+                        <img src={props.skill1} alt='skill'></img>:null
+                    }
+                    {props.skill2 ? 
+                        <img src={props.skill2} alt='skill'></img>:null
+                    }
+                    {props.skill3 ? 
+                        <img src={props.skill3} alt='skill'></img>:null
+                    }
+                    {props.skill4 ? 
+                        <img src={props.skill4} alt='skill'></img>:null
+                    }
+                    
                 </div>
                 <div>
                     {props.text}

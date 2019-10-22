@@ -5,7 +5,8 @@
     height: 100%;
     min-height: 100vh;
     width: 100vw;
-    font-family: sans-serif
+    font-family: sans-serif;
+    padding-bottom: 50px;
 }
 
 #project_title{
@@ -48,6 +49,7 @@
 
 .btnContainer{
     width: 100%;
+    background-color: #2e364f;
 
 }
 

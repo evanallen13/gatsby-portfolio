@@ -34,7 +34,6 @@ const About = () => {
                         I am looking with in the Los Angeles/Orange County area.
                     </p>
                 </div> 
-                <img className="image"src={'../../me/Army.jpg'} alt='me'></img>
         </div>
     )
 }
