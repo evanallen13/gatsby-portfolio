@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Resume from 'Resume.pdf'
 
 const Nav = (props) => 
     <div>
