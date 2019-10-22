@@ -7,7 +7,6 @@ import js from'../../static/skills/js.png'
 import react from '../../static/skills/react.png'
 import gats from '../../static/skills/gatsby.png'
 import fb from '../../static/skills/firebase.png'
-import sqlIcon from '../../static/skills/sql.png'
 
 const Projects = ({data}) =>{
     const [ skill, setSkill ] = useState('')
@@ -27,7 +26,7 @@ const Projects = ({data}) =>{
               <img src={react} alt="react" onClick={() => setSkill('react')}></img>
               <img src={gats} alt="gatsby" onClick={() => setSkill('gatsby')}></img>
               <img src={fb} alt="firebase" onClick={() => setSkill('firebase')}></img>
-              <img src={sqlIcon} alt="sql" onClick={() => setSkill('sql')}/>
+              <img src={'/skills/sql.png'} alt="sql" onClick={() => setSkill('sql')}/>
             </div>
             <div className="d-flex flex-wrap justify-content-center">
                 {
