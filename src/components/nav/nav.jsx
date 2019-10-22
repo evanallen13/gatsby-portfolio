@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Resume from '../../../static/Resume.pdf'
 
 const Nav = (props) => 
     <div>
@@ -16,7 +17,7 @@ const Nav = (props) =>
             </button>
         </Link>
         <button className='navBtn' style={{backgroundColor : props.btnColor}}>
-            <a href='resume.pdf' download="Evan_Allen_Resume" style={{textDecoration:'none',color: props.color}}>Resume.pdf</a>
+            <a href={Resume} download="Evan_Allen_Resume" style={{textDecoration:'none',color: props.color}}>Resume.pdf</a>
         </button>
     </div>
 
