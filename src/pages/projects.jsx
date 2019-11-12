@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Project from '../components/project/project'
 import '../styles/projects.css'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Nav from '../components/nav/nav'
 import js from'../../static/skills/js.png'
 import react from '../../static/skills/react.png'
@@ -28,6 +28,7 @@ const Projects = ({data}) =>{
               <img src={fb} alt="firebase" onClick={() => setSkill('firebase')}></img>
               <img src={'/skills/sql.png'} alt="sql" onClick={() => setSkill('sql')}/>
             </div>
+            <Link to="/project">link</Link>
             <div className="d-flex flex-wrap justify-content-center">
                 {
                   data.allMarkdownRemark.nodes.map((node) => (

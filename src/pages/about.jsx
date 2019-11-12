@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/about.css'
 import Nav from '../components/nav/nav'
+import me from "../../static/me/me.png"
 
 const About = () => {
     return (
@@ -34,6 +35,7 @@ const About = () => {
                         I am looking with in the Los Angeles/Orange County area.
                     </p>
                 </div> 
+                <img src={me} alt="me" style={{display:"inline",width:"30vw"}}></img>
         </div>
     )
 }
