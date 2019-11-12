@@ -28,7 +28,6 @@ const Projects = ({data}) =>{
               <img src={fb} alt="firebase" onClick={() => setSkill('firebase')}></img>
               <img src={'/skills/sql.png'} alt="sql" onClick={() => setSkill('sql')}/>
             </div>
-            <Link to="/project">link</Link>
             <div className="d-flex flex-wrap justify-content-center">
                 {
                   data.allMarkdownRemark.nodes.map((node) => (
