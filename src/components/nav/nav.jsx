@@ -16,7 +16,7 @@ const Nav = (props) =>
             </button>
         </Link>
         <button className='navBtn' style={{backgroundColor : props.btnColor}}>
-            <a href={'Resume.pdf'} download="Evan_Allen_Resume" style={{textDecoration:'none',color: props.color}}>Resume.pdf</a>
+            <a href='https://imagestest01.blob.core.windows.net/test/resume.pdf' download="Evan_Allen_Resume" style={{textDecoration:'none',color: props.color}}>Resume.pdf</a>
         </button>
     </div>
 

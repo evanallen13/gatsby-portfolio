@@ -6,7 +6,7 @@ const Homepage = () => {
     return (
         <div className='Homepage'>
             <h1>Evan Allen</h1>
-            {/* <Nav
+            <Nav
                 btnColor = {'#f3f0e2'}
                 color = {'#2e364f'}
                 page1 = {['/about','About']}
@@ -22,7 +22,7 @@ const Homepage = () => {
                 <a href='mailto:evanallen13@gmail.com' target='_blank' rel="noopener noreferrer">
                     <img src="/header/gmail.png" alt="email"></img>
                 </a>
-            </div> */}
+            </div>
         </div>
     )
 }
