@@ -1,6 +1,6 @@
 ---
 title : 'Todo App'
-img : '/projects/todo.png'
+img : 'https://imagestest01.blob.core.windows.net/test/todo.gif'
 git : 'https://github.com/evanallen13/React-Todo'
 hosting : 'https://zen-johnson-a4f7b0.netlify.com/'
 skills : '/skills/js.png , /skills/html5.png'
