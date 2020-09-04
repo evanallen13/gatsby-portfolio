@@ -1,6 +1,6 @@
 ---
 title : 'Rotten Tomatoes Clone'
-img : '/projects/rotton.png'
+img : 'https://imagestest01.blob.core.windows.net/test/rotton.PNG'
 git : 'https://github.com/evanallen13/Rotton-Clone'
 hosting : 'https://confident-brahmagupta-7bba1b.netlify.com'
 skills : '/skills/js.png , /skills/html5.png, /skills/bootstrap.png'

@@ -1,6 +1,6 @@
 ---
 title : 'Weather App'
-img : 'weather2.png'
+img : 'https://imagestest01.blob.core.windows.net/test/weather.PNG'
 git : 'https://github.com/evanallen13/Weather-Final'
 hosting : 'https://nervous-clarke-50a2e4.netlify.com/'
 keywords : 'js react firebase bootstrap'
