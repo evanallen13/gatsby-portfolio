@@ -1,6 +1,7 @@
 import React from "react"
 import Nav from '../components/nav/nav'
 import '../styles/index.css'
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'; 
 
 const Homepage = () => {
     return (
@@ -14,13 +15,16 @@ const Homepage = () => {
             ></Nav>
             <div className="contact">
                 <a href='https://github.com/evanallen13' target='_blank' rel="noopener noreferrer">
-                    <img src="/header/github.png" alt="github"></img>
+                    <i class="fab fa-github-square fa-4x" style={{color: '#ef5939'}}></i>
                 </a>
                 <a href='tel:7142642562' target='_blank' rel="noopener noreferrer">
-                    <img src="/header/call.png" alt="call"></img>
+                    <i class="fas fa-phone-square-alt fa-4x" style={{color: '#ef5939'}}></i>
                 </a>
                 <a href='mailto:evanallen13@gmail.com' target='_blank' rel="noopener noreferrer">
-                    <img src="/header/gmail.png" alt="email"></img>
+                    <i class="fas fa-envelope-square fa-4x" style={{color: '#ef5939'}}></i>
+                </a>
+                <a href='https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile' target='_blank' rel="noopener noreferrer">
+                    <i class="fab fa-linkedin fa-4x" style={{color: '#ef5939'}}></i>   
                 </a>
             </div>
         </div>
