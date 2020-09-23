@@ -1,0 +1,46 @@
+i{
+    color: #ef5939;
+}
+
+ul{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    color: #ef5939;
+}
+li{
+    font-size: 40px;
+}
+.Link{
+    color:#ef5939;
+    text-decoration: none;
+}
+
+#timesIcon{
+    transition: all 1s ease-in-out;
+}
+
+#timesIcon::after{
+    transition: all 1s ease-in-out;
+    transform: translateY(16px);
+    color: green;
+}
+
+#timesIcon::before{
+    transition: all 1s ease-in-out;
+    transform: translateY(-16px)
+}
+
+#barsIcon{
+    transition: all 1s ease-in-out;
+}
+
+#barsIcon::after{
+    transition: all 1s ease-in-out;
+    transform: translateY(-16px);
+}
+
+#barsIcon::before{
+    transition: all 1s ease-in-out;
+    transform: translateY(16px);
+}

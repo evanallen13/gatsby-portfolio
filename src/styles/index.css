@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
-body{
-    margin: 0;
+@media (prefers-color-scheme: dark) {
+    .Homepage{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 1);
+        height: 100vh;
+        width: 100vw;
+        font-family: cursive;
+    }
 }
+
+@media (prefers-color-scheme: light) {
+    .Homepage{
+        text-align: center;
+        background-color: rgb(206, 155, 155);
+        height: 100vh;
+        width: 100vw;
+        font-family: cursive;
+    }
+}
+
 .Homepage{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 1);
-    height: 100vh;
-    width: 100vw;
-    font-family: cursive;
+    align-content: center;
 }
+
 .Homepage h1{
     font-family: 'Permanent Marker', cursive;
     margin: 0;
@@ -37,6 +51,11 @@ body{
 }
 @media screen and (max-width: 700px) {
     .Homepage h1{
-       padding-top: 10vh;
+       padding-top: 1vh;
+       font-size: 100px;
     }
+}
+
+#nav{
+    transition: opacity 1s ease-in-out;
 }
