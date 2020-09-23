@@ -12,11 +12,11 @@ const Hamburger = () => {
     const navOpen = () => {
         if (open) {
             document.getElementById("nav").style.display = 'none'
-            document.getElementById("barsIcon").style.color = 'rgba(239, 89, 57, .5)'
+            document.getElementById("barsIcon").style.color = 'rgba(239, 89, 57, .9)'
             open = !open
         } else {
             document.getElementById("nav").style.display = 'block'
-            document.getElementById("barsIcon").style.color = 'rgba(239, 89, 57, 1)'
+            document.getElementById("barsIcon").style.color = 'rgba(239, 89, 57, .5)'
             open = !open
         }
     }
