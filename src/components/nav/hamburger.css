@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
 i{
     color: #ef5939;
 }
@@ -10,7 +12,9 @@ ul{
 }
 li{
     font-size: 40px;
+    font-family: cursive;
 }
+
 .Link{
     color:#ef5939;
     text-decoration: none;
@@ -43,4 +47,10 @@ li{
 #barsIcon::before{
     transition: all 1s ease-in-out;
     transform: translateY(16px);
+}
+
+#nav{
+    -webkit-transition: opacity 1s; 
+    -moz-transition: opacity 1s; 
+    transition: opacity 1s; 
 }

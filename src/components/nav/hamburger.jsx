@@ -9,12 +9,14 @@ const Hamburger = () => {
     //const [open, setOpen] = useState(false);
     let open = true;
 
-    const navOpen = () =>{
-        if(open){
+    const navOpen = () => {
+        if (open) {
             document.getElementById("nav").style.display = 'none'
+            document.getElementById("barsIcon").style.color = 'rgba(239, 89, 57, .5)'
             open = !open
-        }else{
+        } else {
             document.getElementById("nav").style.display = 'block'
+            document.getElementById("barsIcon").style.color = 'rgba(239, 89, 57, 1)'
             open = !open
         }
     }
@@ -22,11 +24,7 @@ const Hamburger = () => {
     return (
         <div className="menu-btn">
             <span onClick={() => navOpen()}>
-                {
-                    !open ?
-                        <i id='timesIcon' className="fas fa-times fa-4x"></i> :
-                        <i id='barsIcon' className="fas fa-bars fa-4x"></i>
-                }
+                <i id='barsIcon' className="fas fa-bars fa-3x"></i>
             </span>
             <div id="nav">
                 <ul>

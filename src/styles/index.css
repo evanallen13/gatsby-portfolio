@@ -27,7 +27,7 @@
 .Homepage h1{
     font-family: 'Permanent Marker', cursive;
     margin: 0;
-    color: #ef5939;
+    color: rgb(239, 89, 57);
     padding-top: 20vh;
     font-size: 120px;
 }
@@ -51,8 +51,8 @@
 }
 @media screen and (max-width: 700px) {
     .Homepage h1{
-       padding-top: 1vh;
-       font-size: 100px;
+       padding-top: 5px;
+       font-size: 90px;
     }
 }
 
