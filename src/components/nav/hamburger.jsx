@@ -7,16 +7,16 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 const Hamburger = () => {
 
     //const [open, setOpen] = useState(false);
-    let open = true;
+    let open = false;
 
     const navOpen = () => {
         if (open) {
-            document.getElementById("nav").style.display = 'none'
-            document.getElementById("barsIcon").style.color = 'rgba(239, 89, 57, .9)'
+            document.getElementById("nav").classList.remove("navClosed")
+            document.getElementById("nav").classList.add("navOpen")
             open = !open
         } else {
-            document.getElementById("nav").style.display = 'block'
-            document.getElementById("barsIcon").style.color = 'rgba(239, 89, 57, .5)'
+            document.getElementById("nav").classList.remove("navOpen")
+            document.getElementById("nav").classList.add("navClosed")
             open = !open
         }
     }
