@@ -8,6 +8,7 @@ import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 const Homepage = () => {
     return (
         <div className='Homepage'>
+            
             <h1>Evan Allen</h1>
             {/* <Nav
                 btnColor = {'#f3f0e2'}
