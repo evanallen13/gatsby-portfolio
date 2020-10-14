@@ -2,54 +2,33 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby'
 import styled from 'styled-components';
 import './hamburger.css'
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import '../../../node_modules/bootstrap'
 
 const Hamburger = () => {
 
-    //const [open, setOpen] = useState(false);
-    let open = false;
-
-    const navOpen = () => {
-        if (open) {
-            document.getElementById("nav").classList.remove("navClosed")
-            document.getElementById("nav").classList.add("navOpen")
-            open = !open
-        } else {
-            document.getElementById("nav").classList.remove("navOpen")
-            document.getElementById("nav").classList.add("navClosed")
-            open = !open
-        }
-    }
 
     return (
-        <div className="menu-btn">
-            <span onClick={() => navOpen()}>
-                <i id='barsIcon' className="fas fa-bars fa-3x"></i>
-            </span>
-            <div id="nav">
-                <ul>
-                    <li>
-                        <Link className="Link" to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link className="Link" to="/projects">Projects</Link>
-                    </li>
-                </ul>
-            </div>
-
-            {/* {
-                open ?
-                    <ul>
-                        <li>
+        <nav className="navbar navbar-expand-sm navbar-toggleable-sm  mb-3">
+            <div className="container">
+                <button id='navBtn' className="navbar-toggler mr-auto ml-auto" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i className="fas fa-bars fa-2x" style={{color: '#ef5939'}}></i>   
+                </button>
+                <div className="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul className="navbar-nav flex-grow-1">
+                        <li className="nav-item">
                             <Link className="Link" to="/">Home</Link>
                         </li>
-                        <li>
+                        <li className="nav-item">
                             <Link className="Link" to="/projects">Projects</Link>
                         </li>
-                    </ul> :
-                    <div></div>
-            } */}
-        </div>
+                        <li className="nav-item">
+                            <Link className="Link" to="/about">About</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     )
 }
 
