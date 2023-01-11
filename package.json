@@ -21,7 +21,7 @@
     "font-awesome": "^4.7.0",
     "gatsby": "^2.24.63",
     "gatsby-source-filesystem": "^2.1.19",
-    "gatsby-transformer-remark": "^2.6.21",
+    "gatsby-transformer-remark": "^5.25.1",
     "jquery": "^3.5.1",
     "popper.js": "^1.14.3",
     "react": "^16.9.0",
